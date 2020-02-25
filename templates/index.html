@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+    <style>
+        body {
+            background: url(https://i.pinimg.com/originals/72/1c/68/721c68c83bffa6d2a720313fb08fc27e.gif) no-repeat;
+            -moz-background-size: 100%;
+            -webkit-background-size: 100%;
+            -o-background-size: 100%;
+            background-size: 100%;
+            }
+      </style>
+</head>
+<body>
+    <div style="margin-top: 20%;margin-left: -5%;">
+    <form method="POST" action="" style="text-align:center">
+        {{ form.hidden_tag() }}
+        <div>
+            {{ form.screen_name.label(style="color:blue;font-size:28px") }}
+            {{ form.screen_name(style="width:40%;font-size:28px") }}
+        </div>
+        <div>
+            {{ form.button(style="margin-left:10%;margin-top:10px") }}
+        </div>
+    </form>
+</div>
+</body>
+</html>
